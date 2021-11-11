@@ -1,0 +1,34 @@
+/******************************************************************************
+Josh Lowe
+Program Exam 2
+Could not get the number to line up in rows of 10
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Multiples
+{
+public static void main(String[] args){
+  Scanner input = new Scanner(System.in);
+
+  int num = 0;
+  int mult = 100;
+
+  do{
+
+    System.out.print("Enter a number :");
+    num = input.nextInt();
+
+
+    if(num >= 0 || mult <= 0){
+      System.out.println("Please enter numbers above 1 \n");
+    }    
+
+  }while(num <= 0 || mult <= 0 );
+
+
+
+  for (int counter = 0 ; counter < mult ; counter++) {
+    System.out.print(num*( 1 + counter) + " ");
+  }
+}
+}
